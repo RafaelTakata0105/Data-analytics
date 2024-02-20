@@ -8,3 +8,4 @@ st.markdown("*italic*")
 file = "train.data"
 df = pd.read_csv(file)
 st.dataframe(df)
+
