@@ -19,10 +19,16 @@ def graph_creator(dataframe, column):
         y = alt.Y('Count:Q', title = 'Frecuencia'),
 )
     st.altair_chart(chart)
-   
+
+st.markdown('### Survived')  
 graph_creator(df, 'Survived')
+st.markdown('### Passenger class')  
 graph_creator(df, 'Pclass')
+st.markdown('### Age')  
 graph_creator(df, 'Age')
+st.markdown('### Sibling or spouses aboard')  
 graph_creator(df, 'SibSp')
+st.markdown('### Parents and children aboard')  
 graph_creator(df, 'Parch')
+st.markdown('### Ticket Fare')  
 graph_creator(df, 'Fare')
